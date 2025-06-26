@@ -91,7 +91,7 @@ Access the comprehensive problem tracking spreadsheet: [Problem Set Tracker](htt
 3. Practice competitive programming with **[CodeForces](./CodeForces/)**
 
 ### Advanced Level
-1. Master STL with **[Going for Advance](./Going%20fo%20Advance/)**
+1. Master STL with **[Going for Advance](./Going%20for%20Advance/)**
 2. Explore **[Compiler Design](./CompilerDesign/)** implementations
 3. Challenge yourself with **[AtCoder Problems](./AtCoder%20Problem/)**
 
