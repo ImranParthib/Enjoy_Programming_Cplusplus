@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    int t;
+    cin >> t;
     int count = 0;
-    while (n--) {
+    while (t--) {
         int a, b, c;
         cin >> a >> b >> c;
 
