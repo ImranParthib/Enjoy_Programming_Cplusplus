@@ -3,15 +3,21 @@
  * @return {number}
  */
 var reverse = function (x) {
-    let str = x.toString();
-    let reNum = [];
-    for (let n of str) {
-        reNum.push(n);
+    const INT_MAX = 2 ** 31 - 1;
+    const INT_MIN = -(2 ** 31);
+
+    let str = Math.abs(x).toString();        // work with absolute value
+    let reNum = str.split("").reverse().join("");
+    let num = Number(reNum);
+
+    if (num < INT_MIN || num > INT_MAX) {
+        return 0; // overflow
     }
-    reNum.reverse();
-    return Number(reNum.join(""));
+
+    return x < 0 ? -num : num; // put sign back
 };
 
-let n = 123;
-const result = reverse(n);
-console.log(result); // 321
+console.log(reverse(123));        // 321
+console.log(reverse(-123));       // -321
+console.log(reverse(120));        // 21
+console.log(reverse(1534236469)); // 0
